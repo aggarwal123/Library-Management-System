@@ -31,7 +31,7 @@ class Main(object):
             self.list_books.delete(0,END)
             for book in books:
                 # print(book)
-                self.list_books.insert(count, str(book[0]) + " - " + book[1])
+                self.list_books.insert(count, "  " + str(book[0]) + " - " + book[1])
                 count+=1
             
             def Book_Info(event):
@@ -256,7 +256,7 @@ class Main(object):
         self.list_books.delete(0,END)
         count = 0
         for book in search:
-            self.list_books.insert(count, str(book[0]) + " - " + book[1])
+            self.list_books.insert(count, "  " + str(book[0]) + " - " + book[1])
             count+=1
     
     def Books_List(self):
@@ -266,7 +266,7 @@ class Main(object):
             self.list_books.delete(0,END)
             count = 0
             for book in all_books:
-                self.list_books.insert(count, str(book[0]) + " - " + book[1])
+                self.list_books.insert(count, "  " + str(book[0]) + " - " + book[1])
                 count+=1
         
         elif value ==2:
@@ -274,7 +274,7 @@ class Main(object):
             self.list_books.delete(0,END)
             count = 0
             for book in books_in_library:
-                self.list_books.insert(count, str(book[0]) + " - " + book[1])
+                self.list_books.insert(count,"  " + str(book[0]) + " - " + book[1])
                 count+=1
         
         else:
@@ -282,7 +282,7 @@ class Main(object):
             self.list_books.delete(0,END)
             count = 0
             for book in borrowed_books:
-                self.list_books.insert(count, str(book[0]) + " - " + book[1])
+                self.list_books.insert(count, "  " + str(book[0]) + " - " + book[1])
                 count+=1
 
 
