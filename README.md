@@ -20,7 +20,7 @@ The Library Management System is a graphical user interface (GUI) application bu
 
 ### Prerequisites
 To run the Library Management System, you need:
-- Python 3..9.13
+- Python 3.9.13
 - Required Python libraries (usually pre-installed): Tkinter, sqlite3
 
 ### Installation and Usage
